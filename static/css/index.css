@@ -1,0 +1,80 @@
+body {
+    font-family: serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: aliceblue;
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Fixa o gradiente no fundo da página */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #005caa, rgb(0, 183, 255)); /* Gradiente */
+    z-index: -1; /* Coloca o gradiente atrás do conteúdo */
+    filter: blur(3px); /* Aplica o desfoque ao gradiente */
+    opacity: 0.8; /* Torna o gradiente semi-transparente */
+}
+
+img.my-logo {
+    max-width: 40%; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+header {
+    background-color: #005caa;
+    background-image: linear-gradient(to bottom right, #005caa, rgb(0, 183, 255));
+    color: #fff;
+    padding: 0px 0px;
+}
+
+h1 { 
+    color: #005caa;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #005caa;
+}
+
+p {
+    font-size: medium;
+}
+
+.btn-play {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+}
+
+.btn-play:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do quadrado branco com sombra */
+.text-box {
+    background-color: white; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem para centralizar */
+    max-width: 80%; /* Largura máxima */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.); /* Sombra ao redor do quadrado */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+}
+
+footer {
+    background-color: #005caa;
+    color: #fff;
+    padding: 15px 0;
+}
